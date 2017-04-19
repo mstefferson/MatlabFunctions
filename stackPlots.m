@@ -64,11 +64,10 @@ aspectRatio = axVec{1}.Position(4) ./ axVec{1}.Position(3);
 shift = 0.02;
 tX = shift;
 tY = 1 - shift ./ aspectRatio;
-% fix appearance
 % title spacing parameter
 titleWiggle = 3/2;
+% loop over plots to fix appearance
 for ii = 1 : numPlots
-  %%
   % grab font size for title scaling
   axVec{ii}.FontUnits = 'normalized';
   titleSpace = titleWiggle * axVec{1}.FontSize;
